@@ -12,7 +12,7 @@ export const metadata = {
 const Teams: React.FC = () => {
   return (
     <>
-      <section>
+      <section className="bg-red-600">
         <div className="relative z-10 flex flex-col items-center justify-center">
           <Image
             src=""
@@ -36,15 +36,6 @@ const Teams: React.FC = () => {
         <Members members={pubg} />
         <TitleCardComponent titleCards={[{ name: "COD OFFICIAL TEAM", image: image, right: true }]} />
         <Members members={pubg} />
-        <div className="grid grid-row-1 md:grid-cols-1">
-  <div className="order-1 sm:order-2">
-    test
-  </div>
-  <div className="order-2 sm:order-1">
-    test2
-  </div>
-</div>
-
       </section>
     </>
   );

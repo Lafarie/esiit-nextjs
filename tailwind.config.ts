@@ -7,8 +7,14 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/tw-elements/js/**/*.js",
   ],
-
-  plugins: [require("daisyui")],
+  theme: {
+    extend: {
+      fontFamily: {
+        'permanent-marker': ['"Permanent Marker"', 'cursive', 'normal'],
+      },
+    },
+  },
+  plugins: [require("daisyui"), require("tw-elements/plugin.cjs")],
   daisyui: {
     themes: [
       {
@@ -34,7 +40,7 @@ const config: Config = {
         },
       },
     ],
-    plugins: [require("tw-elements/plugin.cjs")],
   },
 };
+
 export default config;
