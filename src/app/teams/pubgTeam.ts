@@ -1,22 +1,21 @@
-import image from "next/image";
-import archi from "./archi.jpg";
+import image from "../../assets/images/event-bg.jpg";
 
 const members = [
     {
-        name: "John Doe",
-        image: archi,
+        name: "John Doe1",
+        image: image,
+    },
+    {
+        name: "Jane Doe2",
+        image: image,
+    },
+    {
+        name: "John Doe3",
+        image: image,
     },
     {
         name: "Jane Doe",
-        image: archi,
-    },
-    {
-        name: "John Doe",
-        image: archi,
-    },
-    {
-        name: "Jane Doe",
-        image: archi,
+        image: image,
     },
     ];
 export default members;

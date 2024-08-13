@@ -9,7 +9,8 @@ interface Member {
 function Members({ members }: { members: Member[] }) {
   return (
     <>
-      <div className="flex items-center justify-center gap-1 bg-red-400">
+      <div className="flex items-center justify-center gap-1
+      ">
         <div className="m-1 grid grid-cols-2  items-center justify-center gap-1 sm:flex ">
           {members.map((member, index) => (
             <div key={index} className="group relative max-w-[200px] overflow-hidden rounded shadow-lg">
